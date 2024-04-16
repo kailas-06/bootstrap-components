@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Oxygen';
+    src: url('Oxygen-BoldItalic.eot');
+    src: url('Oxygen-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oxygen-BoldItalic.woff2') format('woff2'),
+        url('Oxygen-BoldItalic.woff') format('woff'),
+        url('Oxygen-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('Oxygen-Italic.eot');
+    src: url('Oxygen-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Oxygen-Italic.woff2') format('woff2'),
+        url('Oxygen-Italic.woff') format('woff'),
+        url('Oxygen-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('Oxygen.eot');
+    src: url('Oxygen.eot?#iefix') format('embedded-opentype'),
+        url('Oxygen.woff2') format('woff2'),
+        url('Oxygen.woff') format('woff'),
+        url('Oxygen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('Oxygen-Bold.eot');
+    src: url('Oxygen-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Oxygen-Bold.woff2') format('woff2'),
+        url('Oxygen-Bold.woff') format('woff'),
+        url('Oxygen-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

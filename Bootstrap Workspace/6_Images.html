@@ -1,0 +1,102 @@
+<!DOCTYPE html>     
+<html>
+<head>
+    <title>First Bootstrap Demo</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="important words of this web page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <style>
+    
+      .dimension{
+          height: 300px;
+          width:300px;
+      }
+    </style>
+</head>
+<body class="container">
+<section>
+    <img src="Images/flower4.jpg" alt="flower" class="myimage-circle"> <!-- own class-->
+</section>
+<section>
+    <!-- rounded-circle : image as oval shape . h and w are same then : circle shape-->
+    <img src="Images/flower4.jpg" alt="flower" class="rounded-circle" height="300" width="300">
+</section>
+<section>
+    <img src="Images/flower4.jpg" alt="flower" class="rounded">
+    <img src="Images/flower4.jpg" alt="flower">
+    <img src="Images/flower4.jpg" alt="flower" class="img-thumbnail">
+</section>
+<!-- utility classes : rounded, rounded-circle, border-->
+<!-- contextual classes :  bg-info, bg-success-->
+<section>
+    <div class="rounded bg-info">
+        India is my country.  India is my country India is my country 
+        India is my country
+    </div>
+    <div class="rounded-circle bg-success">
+        India is my country.  India is my country India is my country 
+        India is my country
+    </div>
+    <div class="border">
+        India is my country.  India is my country India is my country 
+        India is my country
+    </div>
+</section>
+<hr>
+<!-- float-left, float-right, clearfix-->
+<article class="border">
+    <figure class="float-right border">
+        <img src="Images/flower2.jpg"  alt="flower">
+        <figcaption>Sweet Flower</figcaption>
+    </figure>
+        <p class="clearfix"></p>
+        <p >
+            para 1: A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, 
+            usually by providing a mechanism for the union of sperm with eggs. 
+        </p>
+        <p>
+            para 2: A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, 
+            usually by providing a mechanism for the union of sperm with eggs. 
+        </p>
+</article>
+
+<article class="border">
+    <figure class="float-right border">
+        <img src="Images/flower2.jpg"  alt="flower">
+        <figcaption>Sweet Flower</figcaption>
+    </figure>
+        <p >
+            para 1: A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, 
+            usually by providing a mechanism for the union of sperm with eggs. 
+        </p>
+        <p>
+            para 2: A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, 
+            usually by providing a mechanism for the union of sperm with eggs. 
+        </p>
+</article>
+<hr>
+
+<article class="border">
+    <figure >
+        <img src="Images/flower2.jpg" class="d-block mx-auto"  alt="flower">
+        <figcaption class="w-25 mx-auto">Sweet Flower</figcaption>
+    </figure>
+        <p >
+            para 1: A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, 
+            usually by providing a mechanism for the union of sperm with eggs. 
+        </p>
+        <p>
+            para 2: A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, 
+            usually by providing a mechanism for the union of sperm with eggs. 
+        </p>
+</article>
+<div class="bg-success dimension">
+    <img src="Images/flower3.jpg" class="img-fluid">
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

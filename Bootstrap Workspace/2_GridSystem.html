@@ -1,0 +1,110 @@
+<!DOCTYPE html>     
+<html>
+<head>
+    <title>Bootstrap Grids</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="important words of this web page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+    <table border="1">
+        <tr><td>Hello India</td><td>Hello India</td><td>Hello India</td></tr>
+    </table>
+    <!-- 12 column-->
+    <!-- 12 grids := 1 col: 1 grid-->
+    <!-- 3 grids := 4 col:1 grid, 4col:1 grid  4col: 1grid-->
+    <!-- 3 grids := 3 col:1 grid, 6col:1 grid  3 col: 1grid-->
+<section class="container">
+ <div class="row bg-info">
+   <div class="col-md-3 border">Hello India</div>
+   <div class="col-md-6 border">Hello India</div>
+   <div class="col-md-3 border">Hello India</div>
+ </div>
+ <hr>
+ <div class="row bg-success">
+    <div class="col-md-4 border">Hello India</div>
+    <div class="col-md-4 border">Hello India</div>
+    <div class="col-md-4 border">Hello India</div>
+  </div>
+  <hr>
+  <div class="row bg-warning">
+    <div class="col-md-3 border">Hello India</div>
+    <div class="col-md-4 border">Hello India</div>
+    <div class="col-md-2 border">Hello India</div>
+    <div class="col-md-3 border">Hello India</div>
+  </div>
+  <hr>
+  <div class="row bg-warning">
+    <div class="col-3 border">Hello India</div>
+    <div class="col-4 border">Hello India</div>
+    <div class="col-2 border">Hello India</div>
+    <div class="col-3 border">Hello India</div>
+  </div>
+  <hr>
+  <div class="row bg-warning">
+    <div class="col-3 border">Hello India</div>
+    <div class="col-3 border">Hello India</div>
+    <div class="col-2 border">Hello India</div>
+    <div class="col-2 border">Hello India</div>
+    <div class="col-2 border">Hello India</div>
+  </div>
+  <hr>
+ <div class="row bg-success">
+    <div class="col-md-4 border"><img class="w-100 h-100" src="Images/flower1.jpg"></div>
+    <div class="col-md-4 border"><img class="w-100 h-100"  src="Images/flower2.jpg"></div>
+    <div class="col-md-4 border"><img class="w-100 h-100 "  src="Images/flower5.jpg"></div>
+  </div>
+  <div class="row bg-success">
+    <div class="col-md-4 border"><img class="img-fluid" src="Images/flower1.jpg"></div>
+    <div class="col-md-4 border"><img class="img-fluid"  src="Images/flower2.jpg"></div>
+    <div class="col-md-4 border"><img class="img-fluid"  src="Images/flower5.jpg"></div>
+  </div>
+</section>
+<hr>
+<section class="container">
+
+    <div class="row bg-warning">
+          <!--till xs: grids are horizontal, below xs: grids are stacked-->
+        <div class="col-4 border">Hello India</div>
+        <div class="col-4 border">Hello India</div>
+        <div class="col-4 border">Hello India</div>
+    </div>
+    <div class="row bg-success">
+        <div class="col-sm-4 border">Hello India</div>
+        <div class="col-sm-4 border">Hello India</div>
+        <div class="col-sm-4 border">Hello India</div>
+    </div>
+    <div class="row bg-info">
+        <div class="col-md-4 border">Hello India</div>
+        <div class="col-md-4 border">Hello India</div>
+        <div class="col-md-4 border">Hello India</div>
+    </div>
+    <div class="row bg-secondary">
+        <!--till lg: grids are horizontal, below lg: grids are stacked-->
+        <div class="col-lg-4 border">Hello India 1</div>
+        <div class="col-lg-4 border">Hello India 2 </div>
+        <div class="col-lg-4 border">Hello India 3</div>
+    </div>
+</section>
+<hr>
+<section class="container">
+  <!-- All grids are evenly distributed. No stacking on any screen-->
+  <div class="row bg-primary">
+    <div class="col border">Hello India 1</div>
+    <div class="col border">Hello India 2 </div>
+    <div class="col border">Hello India 3</div>
+    <div class="col border">Hello India 4</div>
+    <div class="col border">Hello India 5</div>
+    <div class="col border">Hello India 6</div>
+    <div class="col border">Hello India 7</div>
+</div>
+</section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

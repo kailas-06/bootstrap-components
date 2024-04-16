@@ -1,0 +1,4 @@
+try abbr,blockquote tag in bootstrap. Show the difference without bootstrap also
+Use following class
+text-monospace
+

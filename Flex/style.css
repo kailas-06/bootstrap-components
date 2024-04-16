@@ -1,0 +1,47 @@
+body{
+    background-color: tan;
+}
+.flex-container{
+    display: flex;
+}
+.flex-container .box, .flex-container1 .box{
+    padding: 30px;
+    border: 1px solid #000;
+}
+.border1{
+    border: 1px solid #000;
+}
+.gap10{
+    gap: 10px;
+}
+h3{
+    color: green;
+}
+.flex-container1{
+    display: inline-flex;
+}
+.flex-container1.direction{
+    flex-direction: row;
+    /* flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */  
+}
+.flexWrap{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.flexWrap .box{
+    flex: 1 0 10%;
+}
+.flexFlow{
+    flex-flow: column;
+}
+.alignItems{
+    height: 150px;
+}
+.alignItems > div{
+    height: fit-content;
+}
+.h-150{
+    height:150px;
+}

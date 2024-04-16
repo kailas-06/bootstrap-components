@@ -1,0 +1,16 @@
+.dash-outer {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.dash-outer .d-list {
+  border: 1px solid #f12b20;
+  padding: 30px 25px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+.dash-outer{
+    column-count: 3;
+    column-gap: 10px;
+    .d-list{
+        border: 1px solid #f12b20;
+        padding: 30px 25px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        break-inside: avoid;
+    }
+}

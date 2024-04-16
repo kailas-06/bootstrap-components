@@ -1,0 +1,46 @@
+
+/* It is supports those browser where text-undeline-offset css property supports */
+
+/* @supports(text-underline-offset: 2px){
+    body{
+        background-color:orange;
+    }
+} */
+
+/* It is supports where text-undeline-offset css property not supports */
+
+/* @supports not (text-underline-offset: 2px){
+    body{
+        background-color: green;
+    }
+} */
+
+/* In or - It supports when anyone css proprty works */
+
+/* @supports (filter:blur(2px)) or (-webkit-filter:blur(2px)){
+    body{
+        background-color: red;
+    }
+} */
+
+/* In and condtion - It supports when both css proprty works */
+/* 
+@supports (filter:blur(2px)) and (-webkit-filter:blur(2px)){
+    body{
+        background-color: red;
+    }
+} */
+
+:root{
+    --test:green;
+}
+@supports (--test : green){
+    body{
+        background-color: var(--test);
+    }
+}
+
+
+
+
+

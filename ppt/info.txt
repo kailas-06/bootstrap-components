@@ -1,0 +1,233 @@
+GRID
+
+->  CSS Grid Layout introduces a 'two-dimensional' grid system to CSS.
+->  Elements can be placed onto the grid within these column and row lines.
+->  You can create a grid with fixed track sizes – using pixels. 
+    This sets the grid to the specified pixel which fits to the layout you desire.
+    You can also create a grid using flexible sizes with percentages or 
+    with the new 'fr' unit designed for this purpose.
+
+->  A grid column is a vertical track in a CSS Grid Layout, and is the space between two 
+    vertical grid lines.It is defined by the grid-template-columns property or in the 
+    shorthand grid or grid-template properties.
+
+->  The fr unit can be used for grid-rows and grid-columns values. 
+    It stands for “fraction of available space”.
+
+->  grid-row: 1 / span 2;       grid-row-start / grid-row-end;
+
+->  What's a fraction (1FR)?
+        A fraction or 1FR is one part of the whole.
+example:-
+
+    grid-template-columns: auto 100px 1fr 2fr;
+    grid-template-rows: 50px 5em min-content auto;
+
+Column 1 (auto keyword): Column is fitted to the content in the column.
+Column 2 (“100px”): Column is 100 pixels wide.
+Column 3 (“1fr”): Column takes up one fraction unit of the remaining space.
+Column 4 (“2fr”): Column takes up two fraction units of the remaining space.
+
+Row 1 (“50px”): Row is 50 pixels tall.
+Row 2 (“5em”): Row is 5 ems tall.
+Row 3 (min-content keyword): Row is as small as the content will let it be.
+Row 4 (auto keyword): Row is fitted to the content in the row.
+
+
+-> The repeat(): function has been specifically designed for this module. 
+    It allows you to define a pattern repeated X times. Like repeat(6, 1fr);. 
+    Let’s say you want to do 12 equal-width columns spaced from each other by a 1% margin; 
+    you could define 1fr repeat(11, 1% 1fr).
+
+https://caniuse.com/
+
+@support: feature detection in the browser;
+
+->  To check the css proprty are supported to which browser?
+    (Crome,Firefox,Safari,Edge etc.)
+->  We use this for 'condition css' means if browser are not 
+    supported some properties then we write another 
+    css for that; So it is also called as Conditional Rule
+e.g:
+display: grid;
+
+@supports(supports-condition){
+    <group-rule-body></group-rule-body>
+}
+
+#main{disply:block;}
+
+@supports(disply:grid){      //supported browser
+    #main{display:grid;}
+}
+
+@supports not(disply:grid){   //css for not supported browser /regular css
+    #main{disply:block;}
+}
+
+
+-> We can check here the multiple conditions: using-> or,and
+
+or: needs one conditions is true then run the css
+
+@supports(disply:flex) or (display: -webkit-flex){
+    #main{display:flex;}
+}
+
+and : needs both conditions are true then run the css
+
+@supports(disply:grid) and (display: inline-grid){
+    #main{display:flex;} 
+}
+
+Gap: The gap property defines the size of the gap between the rows and columns.
+        -row-gap
+        -column-gap 
+        syntax :  grid-gap: grid-row-gap grid-column-gap; 
+                  grid-gap: 10px 15px;
+
+-> What Is A Masonry Layout? #
+    -> A masonry layout is one where items are laid out one after the other in the inline direction. 
+        When they move onto the next line, items will move up into any gaps left by shorter items in the first line. 
+        similar to a grid layout with auto-placement, but without sticking to a strict grid for the rows.
+    
+    ->The most well-known example of masonry is on Pinterest, and you will sometimes hear people refer to 
+        the layout as a “Pinterest layout”.
+
+    Property:
+
+    ->masonry-auto-flow: next    => will place the item in the next location on the grid axis.
+    ->masonry-auto-flow: ordered => will cause masonry to ignore items with a definite  
+                                    placement and lay the items out using order-modified document order; 
+
+    -> justify-tracks AND align-tracks properties:
+
+        justify-tracks -> masonry in the inline direction use
+        align-tracks ->   masonry in the block direction then you can use
+        
+Topic : -----FLEXBOX-----
+       - New module in css3 to easy align elements in different directions and orders 
+        -Flexbox is to gives container the ability to expand and shrink elements to best use all the available space
+    -> Flex: The flex property sets the flexible length on flexible items.
+       -css flexbox layout replaces float layout.
+       -New way to build one dimensional layouts. 
+         --one dimensional means one time we can handle columns or rows
+
+    css flexbox Properties:
+    -flex-direction            -flex
+    -flex-wrap                 -justify-content
+    -flex-flow                 -align-content
+    -flex-grow                 -align-items
+    -flex-shrink               -align-self
+    -flex-basis                -order
+
+    1)-> display: flex;  //for parent element
+
+    2)-> flex-direction : row | row-reverse | column | column-reverse      //for parent element
+            
+            This establishes the main-axis, thus defining the direction flex items are 
+            placed in the flex container. Flexbox is a single-direction layout concept.
+            Think of flex items as primarily laying out either in horizontal rows or 
+            vertical columns.
+             - row : left to right
+             -row-reverse: right to left 
+             -column : top to bottom
+             -column : bottom to top
+
+    3)-> felx-wrap : nowrap | wrap | wrap-reverse;
+            By default, flex items will all try to fit onto one line. You can change that
+            and allow the items to wrap as we needed.Using this property.
+
+
+            nowrap (default): all flex items will be on one line
+            wrap: flex items will wrap onto multiple lines, from top to bottom.
+            wrap-reverse: flex items will wrap onto multiple lines from bottom to top.
+
+    4)-> flex-flow :
+            flex-flow: column wrap;    //appy to parent element
+
+            -This is a shorthand property for the flex-direction and flex-wrap properties, 
+                which together define the flex container’s main and cross axes. 
+            -The default value is row nowrap.
+
+    5)-> justify-content: flex-start   | flex-end | center | space-between | space-around | 
+                          space-evenly | start    | end    | left          | right 
+
+                          -apply to parent element
+
+                        flex-start (default): items are packed toward the start of the flex-direction
+
+                        flex-end: items are packed toward the end of the flex-direction.
+
+                        start: items are packed toward the start of the writing-mode direction.
+
+                        end: items are packed toward the end of the writing-mode direction.
+
+                        left: items are packed toward left edge of the container, unless that doesn’t make 
+                             sense with the flex-direction, then it behaves like start.
+
+                        right: items are packed toward right edge of the container, unless that doesn’t make 
+                               sense with the flex-direction, then it behaves like end.
+
+                        center: items are centered along the line
+
+                        space-between: items are evenly distributed in the line; 
+                               first item is on the start line, last item on the end line
+                        space-around: items are evenly distributed in the line with equal 
+                               space around them. 
+                               -Note that visually the spaces aren’t equal,
+                               since all the items have equal space on both sides. 
+                               The first item will have one unit of space against the 
+                               container edge, but two units of space between the next 
+                               item because that next item has its own spacing that applies.
+
+                        space-evenly: items are distributed so that the spacing between 
+                                any two items (and the space to the edges) is equal.
+
+    6)-> align-items: stretch | flex-start | flex-end | center | baseline | first baseline | 
+                      last baseline | start | end | self-start | self-end
+
+                      stretch (default): stretch to fill the container (still respect min-width/max-width)
+                      flex-start / start / self-start: items are placed at the start of the cross axis.
+                      flex-end / end / self-end: items are placed at the end of the cross axis.
+                      center: items are centered in the cross-axis
+                      baseline: items are aligned such as their baselines align.  align basline foem its text
+
+
+    7)-> align-content : flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline |
+                         
+                         vertical-alignment -
+
+    8)-> align-self : auto | flex-start | flex-end | center | baseline | stretch;       //apply to single item
+
+        
+        -> flex-grow => A number specifying how much the item will grow relative to 
+                        the rest of the flexible items  
+        -> flex-shrink => A number specifying how much the item will shrink relative to 
+                          the rest of the flexible items. (To minimize the size)
+        -> flex => The length of the item. Legal values: "auto", "inherit", or 
+                   a number followed by "%", "px", "em" or any other length unit
+        
+        css syntax : flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
+
+    -css flexbox order:    -  to 0 to +      use in responsive 
+
+
+
+**Gutters : 
+
+-Gutters are the gaps between column content, created by horizontal padding. 
+We set padding-right and padding-left on each column, and use negative margin 
+to offset that at the start and end of each row to align content.
+
+    gutter classes apply to with class row   // to that parent apply overflow-hidden;
+
+  -Horizontal gutters  --> .gx-1,.. , gx-5;
+  -Vertical gutters --> .gy-1, ... , gy-5;     .25,.5,1,1.5,3rem
+  
+  -Horizontal & vertical gutters  -- >  g-1 to g-5;   // not no need to apply the overflow -hidden to parent element  
+  -No gutters : g-0;
+
+
+
+ 

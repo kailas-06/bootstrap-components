@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Skeleton BS_5</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="important words of this web page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">    
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body class="my-5">
+
+    <!-- disply:flex; -->
+<section class="container">
+    <h3>display: flex</h3>
+    <div class = "flex-container mx-auto">
+        <div class = "box">One</div>
+        <div class = "box">two</div>
+        <div class = "box">three</div>
+        <div class = "box">four</div>
+        <div class = "box">five</div>
+        <div class = "box">six</div>
+     </div>
+</section>
+
+<!-- display:inline-flex; -->
+<section class="container mt-5">
+    <h3>display: inline-flex</h3>
+    <div class = "flex-container1 mx-auto">
+        <div class = "box">One</div>
+        <div class = "box">two</div>
+        <div class = "box">three</div>
+        <div class = "box">four</div>
+        <div class = "box">five</div>
+        <div class = "box">six</div>
+     </div>
+</section>
+  
+
+<!-- flex-direction: row | row-reverse | column | column-reverse; -->
+<section class="container mt-5">
+    <h3>felx-direction</h3>
+    <div class = "flex-container1 direction mx-auto">
+        <div class = "box">One</div>
+        <div class = "box">two</div>
+        <div class = "box">three</div>
+        <div class = "box">four</div>
+        <div class = "box">five</div>
+        <div class = "box">six</div>
+     </div>
+</section>
+
+<!-- flex-wrap: nowrap | wrap | wrap-reverse; -->
+<section class="container my-3">
+    <h3>felx-wrap</h3>
+    <div class = "flex-container1 direction flexWrap mx-auto">
+        <div class = "box">One</div>
+        <div class = "box">two</div>
+        <div class = "box">three</div>
+        <div class = "box">four</div>
+        <div class = "box">five</div>
+        <div class = "box">six</div>
+        <div class = "box">Seven</div>
+        <div class = "box">Eight</div>
+        <div class = "box">Nine</div>
+        <div class = "box">Ten</div>
+        <div class = "box">11</div>
+        <div class = "box">12</div>
+        <div class = "box">13</div>
+        <div class = "box">14</div>
+        <div class = "box">15</div>
+        <div class = "box">16</div>
+        <div class = "box">17</div>
+        <div class = "box">18</div>
+     </div>
+</section>
+<!-- flex:flow -->
+<section class="container mt-5">
+    <h3>flex-flow</h3>
+    <div class = "flex-container1 mx-auto flexFlow gap10">
+        <div class = "box">One</div>
+        <div class = "box">two</div>
+        <div class = "box">three</div>
+        <div class = "box">four</div>
+     </div>
+</section>
+
+<div class="maindiv d-flex container">
+    <!-- alignItems    default it is at :flex-start-->
+    <section class="container mt-5">
+        <h3>align-items:flex-start</h3>
+        <div class = "flex-container1  alignItems p-3 border1 gap10">
+            <div class = "p-1 border1">Lorem, ipsum.</div>
+            <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+            <div class = "p-1 border1">Lorem.</div>
+            <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        </div>
+    </section>
+    <!-- align-items:center -->
+    <section class="container mt-5">
+        <h3>align-items:center</h3>
+        <div class = "flex-container1  alignItems p-3 border1 gap10 align-items-center">
+            <div class = "p-1 border1">Lorem, ipsum.</div>
+            <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+            <div class = "p-1 border1">Lorem.</div>
+            <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        </div>
+    </section>
+
+    <!-- align-items:end -->
+    <section class="container mt-5">
+        <h3>align-items:flex-end</h3>
+        <div class = "flex-container1  alignItems p-3 border1 gap10 align-items-end">
+            <div class = "p-1 border1">Lorem, ipsum.</div>
+            <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+            <div class = "p-1 border1">Lorem.</div>
+            <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        </div>
+    </section>
+</div>
+
+<!-- align-items:baseline-->
+<section class="container mt-5">
+    <h3>align-items:baseline</h3>
+    <div class = "flex-container1  alignItems p-3 border1 gap10 align-items-baseline">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+<!-- align-items:stretch-->
+<section class="container mt-5">
+    <h3>align-items:stretch</h3>
+    <div class = "flex-container1 h-150 p-3 border1 gap10 align-items-stretch">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+    
+<!-- Align-content:flex-start-->
+<section class="container mt-5">
+    <h3>align-content:flex-start</h3>
+    <div class = "flex-container1 p-3 border1  gap10 align-content-start col-lg-12 h-150 alignItems">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+<!-- align-content:flex-end-->
+<section class="container mt-5">
+    <h3>align-content:flex-end</h3>
+    <div class = "flex-container1 p-3 border1 gap10 d-flex align-content-end flex-wrap col-lg-12 h-150">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+<!-- align-content-center-->
+<section class="container mt-5">
+    <h3>align-content-center</h3>
+    <div class = "flex-container1 p-3 border1 gap10 d-flex align-content-center flex-wrap col-lg-12 h-150">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+<!-- align-content-between-->
+<section class="container mt-5">
+    <h3>align-content-between</h3>
+    <div class = "flex-container1 p-3 border1 gap10 d-flex align-content-between flex-wrap col-lg-12 h-150">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+<!-- align-content-around-->
+<section class="container mt-5">
+    <h3>align-content-around</h3>
+    <div class = "flex-container1 p-3 border1 gap10 d-flex align-content-around flex-wrap col-lg-12 h-150">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+     </div>
+</section>
+<!-- align-content-stretch -->
+<section class="container mt-5">
+    <h3>align-content-stretch</h3>
+    <div class = "flex-container1 p-3 border1 gap10 d-flex align-content-stretch flex-wrap col-lg-12 h-150">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+<!-- align-content-stretch -->
+<section class="container mt-5">
+    <h3>align-content-stretch</h3>
+    <div class = "flex-container1 p-3 border1 gap10 d-flex align-content-stretch flex-wrap col-lg-12 h-150">
+        <div class = "p-1 border1">Lorem, ipsum.</div>
+        <div class = "p-1 border1">Lorem, ipsum dolor.</div>
+        <div class = "p-1 border1">Lorem.</div>
+        <div class = "p-1 border1">Lorem ipsum dolor sit.</div>
+     </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
