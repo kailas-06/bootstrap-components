@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow unfollow button</title>
+    <style>
+        body{
+            color: #fff;
+        }
+
+        .follow{
+            background-color:red;
+            color: #fff;
+        }
+        .unfollow{
+            background-color: blue;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn follow">Follow</button>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script>
+        // $(document).ready(function() {
+        //     $(".follow").click(function() {
+        //         const newText = $(this).text() === "Follow" ? "Unfollow" : "Follow";
+        //         $(this).text(newText).toggleClass('unfollow');
+        //     });
+        // });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.querySelector('.follow');
+            btn.addEventListener('click', function() {
+                var newText = btn.textContent === "Follow" ? "Unfollow" : "Follow";
+                btn.textContent = newText;
+                btn.classList.toggle('unfollow');
+            });
+        });
+
+    </script>
+</body>
+</html>
